@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
-		<title>Online Store</title>
+		<title>Mega Store</title>
 
 		<!-- Loading third party fonts -->
 		<!-- <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css"> -->
@@ -13,16 +13,146 @@
         <!-- Loading font-awesome -->
         <script defer src="js/all.js"></script>
 
-		<!-- Loading main css file -->
+		<!-- Loading main and slider css file -->
         <link href="style.css" rel="stylesheet">
+        <link href="./css/slider css/slider.css" rel="stylesheet">
         
         <!-- Loading bootstrap file -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Loading page icon -->
+        <link rel="icon" href="icon/favicon.PNG" type="image/png" sizes="16x16">
     </head>
     <body>
-        <div class="container pt-3 mt-3">           
-            <p><i class="fas fa-user fa-2x"></i>Welcome</p>                     
+       <header> <!-- Start Header -->
+           <div class="container"> <!-- Start Container Title -->
+               <div class="row">
+                   <div class="col-md-4 col-sm-3 col-xs-2 col-12">
+                       <div class="btn-group">
+                           <button class="btn border dropdown-toggle my-md-4 my-2 text-white"
+                           data-toggle="dropdown"
+                           aria-haspopup="true"
+                           aria-expanded="false">
+                            Naira                           
+                            </button>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">USD</a></li>
+                                <a href="#" class="dropdown-item">EUR</a></li>
+                                <a href="#" class="dropdown-item">GBP</a></li>
+                                <a href="#" class="dropdown-item">CAD</a></li> 
+                            </div>
+                       </div>
+                   </div>
+                   <div class="col-md-4 col-sm-4 col-xs-5 col-12 text-center">
+                       <h2 class="my-md-3 site-title text-white"><span class=""></span>Mega Store</h2> 
+                   </div>
+                   <div class="col-md-4 col-sm-5 col-xs-5 col-12 text-right">
+                       <p class="my-md-4 header-links">
+                           <a href="#" class="px-2">Sign In</a> 
+                           <span class="text-ruler">&#x2223;</span> 
+                           <a href="#" class="px-1">Create Account</a>
+                       </p>
+                   </div>
+               </div>
+           </div> <!-- End Container Title -->
+
+           <div class="container-fluid p-0">
+                <nav class="navbar navbar-expand-md navbar-light bg-light"> <!-- Nav Section -->
+                    <a class="navbar-brand" href="#"><img src="img/Website_Logo.png"></a>                   
+                    <button class="navbar-toggler ml-auto" type="button" 
+                    data-target="#navbarResponsive" 
+                    data-toggle="collapse"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <div class="collapse navbar-collapse" id="navbarResponsive"> <!-- Navigation Items-->
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#home"><span class="fas fa-home fa-1x"></span>Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><span class="fas fa-info-circle fa-1x"></span>Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><span class="fas fa-code-branch fa-1x"></span>Collection</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><span class="fas fa-info-circle fa-1x"></span>Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><span class="fas fa-info-circle fa-1x"></span>About Us</a>
+                            </li>
+                        </ul>
+                    </div>  <!-- End Navigation Items-->
+
+                    <!-- <div class="navbar-nav">
+                        <li class="nav-item border rounded-circle mx-2 search-icon">
+                            <i class="fas fa-search p-2"></i>
+                        </li>
+                        <li class="nav-item border rounded-circle mx-2 search-icon">
+                            <i class="fas fa-shopping-basket p-2"></i>
+                        </li>
+                    </div> -->
+                </nav> <!-- End Nav Section -->
+           </div>
+       </header> <!-- End Header -->
+
+       <main> <!-- Start Main -->
+        <div class="container-fluid p-0">
+            <!-- Start Slider -->
+        <div id="carouselIndicators" class="carousel slide" data-ride="carousel" data-interval="6000">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselIndicators" data-slide-to="1" ></li>
+                <li data-target="#carouselIndicators" data-slide-to="2" ></li>
+                <li data-target="#carouselIndicators" data-slide-to="3" ></li>
+                <li data-target="#carouselIndicators" data-slide-to="4" ></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox"> <!-- Start Carousel Inner -->
+                <!-- Slide 1 -->
+                <div class="carousel-item active" style="background-image: url(img/building-chair-comfort-comfortable-276528.jpg);">
+                    <div class="caption text-center">
+                        <h1>Welcome to Mega Store</h1>
+                        <!-- Neon Button -->
+                        <a class="btn-neon mx-auto" href="#" target="_blank">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Shop Now
+                        </a>                       
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item" style="background-image: url(img/grocery-cart-with-item-1005638.jpg);">
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item" style="background-image: url(img/white-and-black-game-controller-3945673.jpg);">
+                </div>
+                <!-- Slide 4 -->
+                <div class="carousel-item" style="background-image: url(img/close-up-of-row-325876.jpg);">
+                </div>
+                <!-- Slide 5 -->
+                <div class="carousel-item" style="background-image: url(img/brown-wooden-framed-wall-decor-3091202.jpg);">
+                </div>
+            </div> <!-- End Carousel Inner -->
+            <!-- Previous Icon -->
+            <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only" aria-hidden="true">Previous</span>
+            </a>
+            <!-- Next Icon -->
+            <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only" aria-hidden="true">Next</span>
+            </a>
+        </div> <!-- End Slider --> 
         </div>
+       </main> <!-- End Main -->
+       <footer></footer>
         <script src="app.js"></script>
         <script src="js/jquery-351min.js"></script>
         <script src="js/bootstrap.min.js"></script>
